@@ -68,12 +68,12 @@ The form currently shows a "Thanks!" message on submit but **sends no data anywh
 
 - Do NOT change `action` attributes on forms without confirming — the worker endpoint will go here
 - Do NOT rename input `name` attributes — the worker expects specific field names
-- Do NOT change any WhatConverts script tags — tracking ID is `136716`... wait, BCSC may have a different ID. Verify with WhatConverts before touching scripts.
+- Do NOT change any WhatConverts script tags — BCSC profile ID is `158724`. `136716` is Ballarat Automotive (a different client) and must never be used here.
 - Do NOT modify subpage hero images (bus-service, truck-inspect, etc.) — these are correct and page-specific
 
 ---
 
 ## WhatConverts
 
-Tracking script is present on all pages. Tracking ID: confirm in `<head>` of `index.html` before making any changes.  
+Tracking script is present on all pages: `//s.ksrndkehqnwntyxlhgto.com/158724.js` (BCSC profile). As of 2026-10-13 every page uses `158724`; 10 pages previously loaded `136716` (Ballarat Automotive), which stopped dynamic number swapping.  
 Form ID: `id="booking-form"` (set on all form wrappers as of 2026-06-03).
